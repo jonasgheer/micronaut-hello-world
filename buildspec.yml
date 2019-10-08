@@ -11,7 +11,7 @@ phases:
             - ls /
             - ls /root/.sdkman/bin  
             - /root/.sdkman/bin/sdkman-init.sh
-            - ./root/.sdkman/bin/sdkman-init.sh
+            #- ./root/.sdkman/bin/sdkman-init.sh
             - sdk version
             - sdk install gradle
     build:
