@@ -7,7 +7,7 @@ phases:
         commands:
             - echo Entered the install phase...
             - curl -s "https://get.sdkman.io" | bash
-            - ./root/.sdkman/bin/sdkman-init.sh
+            - ./$HOME/.sdkman/bin/sdkman-init.sh
             - sdk version
             - sdk install gradle
     build:
