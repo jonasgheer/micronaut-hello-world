@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+    install:
+        runtime-versions:
+            java: openjdk11
+        commands:
+            - echo Entered the install phase...
+            - curl -s "https://get.sdkman.io" | bash
+            - source "$HOME/.sdkman/bin/sdkman-init.sh"
+            - sdk version
+            - sdk install gradle
+    build:
+        commands:
+            - gradle build 
